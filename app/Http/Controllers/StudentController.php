@@ -130,14 +130,18 @@ class StudentController extends Controller
 
         if ($chair_person) {
             $placement = PlacementSupervisor::where('placement_id', $student?->placement?->id)->first();
-            $placement->chairperson_id = $chair_person->user_id;
-            $placement->save();
+            if ($placement) {
+                $placement->chairperson_id = $chair_person->user_id;
+                $placement->save();
+            }
         }
 
         if ($coordinator) {
             $placement = PlacementSupervisor::where('placement_id', $student?->placement?->id)->first();
-            $placement->coordinator_id = $coordinator->user_id;
-            $placement->save();
+            if ($placement) {
+                $placement->coordinator_id = $coordinator->user_id;
+                $placement->save();
+            }
         }
 
         $conversation = Conversation::with("messages")

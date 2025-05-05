@@ -78,39 +78,39 @@
                                         <td class="px-4 py-3">{{$student->academic_year}}:{{$student->semester}}</td>
                                         <!-- <td>
 
-                                                            @if($student?->placement)
-                                                                <ul
-                                                                    class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
-                                                                    <li>
-                                                                        <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Company:</span>
-                                                                        {{$student?->placement?->name}}
-                                                                    </li>
-                                                                    <li>
-                                                                        <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">City:</span>
-                                                                        {{$student?->placement?->city}}
-                                                                    </li>
-                                                                    <li>
-                                                                        <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Country:</span>
-                                                                        {{$student?->placement?->country}}
-                                                                    </li>
-                                                                    <li>
-                                                                        <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Phone:</span>
-                                                                        {{$student?->placement?->telephone}}
-                                                                    </li>
-                                                                    <li>
-                                                                        <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Email:</span>
-                                                                        {{$student?->placement?->email}}
-                                                                    </li>
-                                                                </ul>
+                                                                @if($student?->placement)
+                                                                    <ul
+                                                                        class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                                                                        <li>
+                                                                            <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Company:</span>
+                                                                            {{$student?->placement?->name}}
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">City:</span>
+                                                                            {{$student?->placement?->city}}
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Country:</span>
+                                                                            {{$student?->placement?->country}}
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Phone:</span>
+                                                                            {{$student?->placement?->telephone}}
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="text-gray-600 dark:text-gray-200 font-bold uppercase ">Email:</span>
+                                                                            {{$student?->placement?->email}}
+                                                                        </li>
+                                                                    </ul>
 
-                                                            @else
-                                                                <span
-                                                                    class="bg-red-100 text-red-800 text-xs font-bold me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">No
-                                                                    Placement</span>
-                                                            @endif
+                                                                @else
+                                                                    <span
+                                                                        class="bg-red-100 text-red-800 text-xs font-bold me-2 px-2.5 py-0.5 rounded dark:bg-red-900 dark:text-red-300">No
+                                                                        Placement</span>
+                                                                @endif
 
 
-                                                        </td> -->
+                                                            </td> -->
 
                                         <td class="px-4 py-3 flex items-center justify-end">
 
@@ -120,12 +120,12 @@
                                                     type="button"
                                                     class="inline-flex items-center px-4 py-2 text-xs font-medium text-gray-900 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-blue-500 dark:focus:text-white">
                                                     <!-- <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
-                                                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                                        fill="none" viewBox="0 0 24 24">
-                                                                        <path stroke="currentColor" stroke-linecap="round"
-                                                                            stroke-linejoin="round" stroke-width="2"
-                                                                            d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z" />
-                                                                    </svg> -->
+                                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                                            fill="none" viewBox="0 0 24 24">
+                                                                            <path stroke="currentColor" stroke-linecap="round"
+                                                                                stroke-linejoin="round" stroke-width="2"
+                                                                                d="M9 17h6l3 3v-3h2V9h-2M4 4h11v8H9l-3 3v-3H4V4Z" />
+                                                                        </svg> -->
 
                                                     Messages
                                                 </a>

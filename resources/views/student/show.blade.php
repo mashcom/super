@@ -107,11 +107,13 @@
                                     <td class="w-1/4"></td>
                                     <td class="w-1/4"></td>
                                 </tr>
+                                @if($student->placement)
                                 <tr class="border-b bg-gray-200">
                                     <td class="px-6 w-1/4 py-4 font-bold text-gray-800" colspan="3">
                                         PROJECT DETAILS
                                     </td>
                                     <td class="text-right">
+                                    
                                     @if(auth()->user()->is_admin == 1 ||  $user_role->coordinator  || $user_role->chairperson)
                                             <a href="{{route("placement_project.edit",$student?->placement?->id)}}" type="button" class="mx-2">
                                                 <x-button>
@@ -152,6 +154,7 @@
                                     <td class=""></td>
                                 </tr>
                               
+                                @endif
                                 @if($student?->placement?->on_wrl==0)
                                 <tr class="border-b bg-gray-200">
                                     <td class="px-6 w-1/4 py-4 font-bold text-gray-800" colspan="3">

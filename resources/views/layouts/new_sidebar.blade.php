@@ -11,19 +11,11 @@ $user_role = App\Models\User::with('chairperson.department', 'coordinator.depart
 
                         
                         ?>
-<aside id="logo-sidebar"
-    class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0"
-    aria-label="Sidebar">
-    <div class="h-full px-3 py-4 overflow-y-auto bg-red-700 dark:bg-gray-800">
-    <div class="w-full">
-                <img src="/images/logo.png" class="w-full my-2 " alt="{{ env('APP_NAME') }}" />
-            </div>
-        <a href="{{ url('/dashboard') }}" class="flex items-center ps-2.5 mb-5">
-         
-            <span class="self-center text-xl font-extrabold whitespace-nowrap text-white">MSUAS
-                {{ env('APP_NAME') }}</span>
-        </a>
-        <div class="bg-red-600 py-5 px-3 rounded-lg mb-3">
+ <aside
+            class="fixed top-0 left-0 z-40 w-64 h-screen pt-14 transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+            aria-label="Sidenav" id="drawer-navigation">
+            <div class="overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
+            <div class="bg-red-600 py-5 px-3 rounded-lg mb-3">
             <p class="text-white font-bold text-xs mb-3 ml-3">Welcome {{ auth()->user()->name }}</p>
 
             @if (auth()->user()->is_admin == 1)
@@ -52,8 +44,8 @@ $user_role = App\Models\User::with('chairperson.department', 'coordinator.depart
             @endif
 
         </div>
-        <ul class="space-y-2 font-medium">
-            @if (auth()->user()->is_admin == 1)
+                <ul class="pt-5 mt-5 space-y-2 border-t border-gray-200 dark:border-gray-700">
+                @if (auth()->user()->is_admin == 1)
                 <li>
                     <a href="{{ url('/report') }}"
                         class="flex items-center p-1 text-red-50 rounded-lg hover:bg-red-600 group">
@@ -238,8 +230,6 @@ $user_role = App\Models\User::with('chairperson.department', 'coordinator.depart
                     </a>
                 </form>
             </li>
-
-
-        </ul>
-    </div>
-</aside>
+                </ul>
+            </div>
+        </aside>
